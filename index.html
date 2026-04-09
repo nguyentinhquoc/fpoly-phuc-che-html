@@ -12,13 +12,13 @@
       <link rel="stylesheet" href="./assets/style.css">
     </head>
     <body class>
-        <div class="max-w-6xl mx-auto">
+        <div class=" mx-auto">
             <!-- NAVBAR -->
-            <header class=" mx-auto">
+            <header class="w-screen mx-auto">
                 <!-- NAV START -->
                 <nav
-                    class=" bg-white nav-container w-fit max-w-6xl w-full  max-xl:p-0 max-lg:p-3 fixed mx-auto z-9999">
-                    <div class="nav-wrapper">
+                    class=" bg-white w-full nav-containerw-full  max-xl:p-0 max-lg:p-3 fixed z-9999">
+                    <div class="nav-wrapper m-auto  max-w-6xl ">
                         <div class="logo-section">
                             <a href="#"><img src="./logo-fpt-polytechnic.jpg"
                                     alt="Logo FPT Polytechnic"
@@ -54,14 +54,13 @@
                 </nav>
             </header>
             <div class="flex flex-col gap-30 overflow-hidden mb-5">
-
                 <!-- HERO -->
-                <section class="w-full relative pt-10 max-sm:pt-20" id="home">
-                    <img src="./banner.png" class="w-full object-cover" />
+                <section class="w-screen relative pt-10 max-sm:pt-20 aos-init" id="home" data-aos="fade-up">
+                    <img src="./banner.png" class="w-screen object-cover" />
                     <div id="hero"
                         class=" w-[70%] max-lg:w-[90%] absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/2 max-sm:static max-sm:transform-none max-sm:translate-x-0 max-sm:translate-y-0  max-sm:mx-auto ">
                         <div
-                            class="card bg-white rounded-4xl p-8 max-lg:p-4 text-center flex flex-col gap-0 items-center justify-center">
+                            class="zoom-hover card bg-white rounded-4xl p-8 max-lg:p-4 text-center flex flex-col gap-0 items-center justify-center">
                             <div
                                 class="flex flex-col gap-3 justify-center items-center max-md:gap-1">
                                 <div class="flex gap-2">
@@ -108,7 +107,8 @@
 
                 <!-- MỤC TIÊU -->
                 <section id="muc-tieu"
-                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center ">
+                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center max-w-6xl aos-init"
+                    data-aos="fade-up">
                     <div
                         class="flex flex-col gap-3 justify-center items-start">
                         <div class="flex gap-2">
@@ -151,15 +151,16 @@
 
                     <img loading="lazy"
                         src="./mucTieuPlaceholder.png"
-                        class="rounded-xl " />
+                        class="rounded-xl zoom-hover" />
                 </section>
 
                 <!-- QUY TRÌNH -->
                 <section id="quy-trinh"
-                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center max-w-6xl aos-init"
+                    data-aos="fade-up">
                     <img loading="lazy"
                         src="./quyTrinhPlaceholder.png"
-                        class="rounded-xl  order-2 md:order-1" />
+                        class="rounded-xl zoom-hover order-2 md:order-1" />
                     <div
                         class="order-1 md:order-2 flex flex-col gap-3 justify-center items-start">
 
@@ -201,11 +202,12 @@
 
                 <!-- ẢNH MẪU -->
                 <section id="anh-mau"
-                    class=" relative max-sm:mt-30 max-sm:mb-20">
+                    class=" relative max-sm:mt-30 max-sm:mb-20 max-w-6xl mx-auto aos-init"
+                    data-aos="fade-up">
                     <div
                         class="  w-[70%] max-lg:w-[90%] absolute -top-12 left-1/2 transform -translate-x-1/2 translate-y-1/2  z-999 max-sm:-top-60">
                         <div
-                            class=" bg-white rounded-4xl  p-8 max-lg:p-4 text-center flex flex-col gap-0 items-center justify-center">
+                            class="zoom-hover bg-white rounded-4xl  p-8 max-lg:p-4 text-center flex flex-col gap-0 items-center justify-center">
                             <div
                                 class="flex flex-col gap-3 justify-center items-center max-md:gap-1">
                                 <div class="flex gap-2">
@@ -240,27 +242,27 @@
                         <div class="grid grid-cols-2 grid-rows-2 gap-10 ">
                             <div>
                                 <img loading="lazy" src="./phucche1.png" alt
-                                    class="rounded-xl max-sm:w-200">
+                                    class="rounded-xl zoom-hover max-sm:w-200">
                             </div>
                             <div>
                                 <img loading="lazy" src="./phucche2.png" alt
-                                    class="rounded-xl max-sm:w-200">
+                                    class="rounded-xl zoom-hover max-sm:w-200">
                             </div>
                             <div>
                                 <img loading="lazy" src="./phucche3.png" alt
-                                    class="rounded-xl max-sm:w-200">
+                                    class="rounded-xl zoom-hover max-sm:w-200">
                             </div>
                             <div>
                                 <img loading="lazy" src="./phucche4.png" alt
-                                    class="rounded-xl max-sm:w-200">
+                                    class="rounded-xl zoom-hover max-sm:w-200">
                             </div>
                             <div>
                                 <img loading="lazy" src="./phucche5.png" alt
-                                    class="rounded-xl max-sm:w-200  ">
+                                    class="rounded-xl zoom-hover max-sm:w-200  ">
                             </div>
                             <div>
                                 <img loading="lazy" src="./phucche6.png" alt
-                                    class="rounded-xl max-sm:w-200">
+                                    class="rounded-xl zoom-hover max-sm:w-200">
                             </div>
                         </div>
 
@@ -271,7 +273,8 @@
 
                 <!-- QR / GỬI ẢNH -->
                 <section id="gui-anh"
-                    class="max-sm:w-full w-[70%] mx-auto px-4 flex max-md:flex-col gap-10 items-center rounded-4xl py-10 relative bg-white max-md:w-[90%]">
+                    class="max-sm:w-full w-[70%] mx-auto px-4 flex max-md:flex-col gap-10 items-center rounded-4xl py-10 relative bg-white max-md:w-[90%] max-w-6xl aos-init"
+                    data-aos="fade-up">
                     <div
                         class="fake-shadow absolute -z-10 rounded-2xl left-1/2 -bottom-6 transform -translate-x-1/2 h-12 w-[50%] flex-1 "></div>
                     <div
@@ -301,20 +304,20 @@
                             class=" relative max-w-[550px] max-md:mt-10">
                             <a
                                 href="https://docs.google.com/forms/d/1_jwRXBHgq8DYBizQGtrVMlxKXDhRifJzrQVgbQLt400/viewform?edit_requested=true">
-                                <img src="./titleTruyCap.png" alt class="w-80">
+                                <img src="./titleTruyCap.png" alt class="w-80 zoom-hover lacnhe">
                             </a>
                         </div>
                     </div>
 
                     <div class="flex justify-center">
                         <img loading="lazy" src="./QR.png"
-                            class="w-100 rounded-xl max-sm:w-70" />
+                            class="w-100 rounded-xl max-sm:w-70 zoom-hover" />
                     </div>
                 </section>
-
                 <!-- CONTACT -->
                 <section id="contact"
-                    class=" flex max-md:flex-col gap-10 items-center">
+                    class=" flex max-md:flex-col gap-10 items-center w-6xl mx-auto aos-init"
+                    data-aos="fade-up">
                     <div
                         class="ml-20 max-md:ml-5 max-lg:w-full flex-1 max-md:w-[90%]">
                         <h3
@@ -371,14 +374,14 @@
                             </div>
 
                             <button type="submit"
-                                class="bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-info transition duration-300 active:scale-95">
+                                class="bg-primary cursor-pointer text-white font-bold py-3 px-4 rounded-lg hover:bg-info transition duration-300 active:scale-95">
                                 Gửi thông tin
                             </button>
                         </form>
                     </div>
                     <img loading="lazy"
                         src="./imgContact.png"
-                        class="rounded-xl w-150 max-md:w-[100%]" />
+                        class="rounded-xl w-120 max-md:w-full zoom-hover" />
                 </section>
 
                 <!-- GO TO TOP BUTTON -->
@@ -488,6 +491,43 @@ if (logoZalo) {
         });
     });
 }
+
+// Navbar fade effect on scroll
+const navbar = document.querySelector('nav');
+let scrollTimeout;
+
+window.addEventListener('scroll', function() {
+    if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+    }
+    
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Scroll Animation (AOS-like effect)
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -80px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const aosType = entry.target.getAttribute('data-aos') || 'fade-up';
+            entry.target.classList.add('aos-animate', aosType);
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('[data-aos]').forEach(el => {
+    observer.observe(el);
+});
+
 
 
         </script>
