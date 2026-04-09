@@ -43,16 +43,16 @@ navLinks.forEach(link => {
 });
 
 // Smooth scroll for Go to Top button (logoZalo)
-const logoZalo = document.getElementById('logoZalo');
-if (logoZalo) {
-    logoZalo.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-}
+// const logoZalo = document.getElementById('logoZalo');
+// if (logoZalo) {
+//     logoZalo.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         window.scrollTo({
+//             top: 0,
+//             behavior: 'smooth'
+//         });
+//     });
+// }
 
 // Toast notification function
 function showToast(message, type = 'success') {
