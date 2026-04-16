@@ -1,5 +1,4 @@
 
-
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navMenu = document.getElementById('navMenu');
 
@@ -43,16 +42,52 @@ navLinks.forEach(link => {
 });
 
 // Smooth scroll for Go to Top button (logoZalo)
-// const logoZalo = document.getElementById('logoZalo');
-// if (logoZalo) {
-//     logoZalo.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         window.scrollTo({
-//             top: 0,
-//             behavior: 'smooth'
-//         });
-//     });
-// }
+const logoZalo = document.getElementById('logoZalo');
+if (logoZalo) {
+    logoZalo.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Navbar fade effect on scroll
+const navbar = document.querySelector('nav');
+let scrollTimeout;
+
+window.addEventListener('scroll', function() {
+    if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+    }
+    
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Scroll Animation (AOS-like effect)
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -80px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const aosType = entry.target.getAttribute('data-aos') || 'fade-up';
+            entry.target.classList.add('aos-animate', aosType);
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('[data-aos]').forEach(el => {
+    observer.observe(el);
+});
 
 // Toast notification function
 function showToast(message, type = 'success') {
