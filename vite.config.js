@@ -31,13 +31,7 @@ export default defineConfig({
         assetFileNames: 'assets/[name][extname]'
       },
       input: {
-        flightExtra: "src/flight-extra.html",
-        flightInfo: "src/flight-info.html",
-        flightList: "src/flight-list.html",
-        flightPayment: "src/flight-payment.html",
         index: "src/index.html",
-        mailTicket: "src/mail-ticket.html",
-        newsList:"src/news-list.html"
       },
     },
   },

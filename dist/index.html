@@ -1,1470 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FPT Poly</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+
+      <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body class>
+        <div class=" mx-auto">
+            <!-- NAVBAR -->
+            <header class="w-screen mx-auto">
+                <!-- NAV START -->
+                <nav
+                    class=" bg-white w-full nav-containerw-full  max-xl:p-0 max-lg:p-3 fixed z-9999">
+                    <div class="nav-wrapper m-auto  max-w-6xl ">
+                        <div class="logo-section">
+                            <a href="#"><img src="./logo-fpt-polytechnic.jpg"
+                                    alt="Logo FPT Polytechnic"
+                                    class="w-30"></a>
+                        </div>
+                        <button class="hamburger" id="hamburgerBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#home">Trang chủ</a></li>
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#hero">Sứ
+                                    mệnh</a></li>
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#muc-tieu">Mục
+                                    tiêu</a></li>
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#quy-trinh">Quy
+                                    trình</a></li>
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#anh-mau">Ảnh
+                                    mẫu</a></li>
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#gui-anh">Gửi
+                                    ảnh</a></li>
+                            <li><a class="uppercase text-base p-5 text-primary"
+                                    href="#contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="flex flex-col gap-30 overflow-hidden mb-5">
+                <!-- HERO -->
+                <section class="w-screen relative pt-10 max-sm:pt-20 aos-init"
+                    id="home" data-aos="fade-up">
+                    <img src="./banner.png" class="w-screen object-cover" />
+                    <div id="hero"
+                        class=" w-[70%] max-lg:w-[90%] absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/2 max-sm:static max-sm:transform-none max-sm:translate-x-0 max-sm:translate-y-0  max-sm:mx-auto ">
+                        <div
+                            class="zoom-hover card bg-white rounded-4xl p-8 max-lg:p-4 text-center flex flex-col gap-0 items-center justify-center">
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center max-md:gap-1">
+                                <div class="flex gap-2">
+                                    <img loading="lazy" src="./start.png"
+                                        alt="start"
+                                        class="w-10 h-10">
+                                    <h3
+                                        class="text-info font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl">
+                                        SỨ MỆNH
+                                    </h3>
+                                    <img loading="lazy" src="./start.png"
+                                        alt="start"
+                                        class="w-10 h-10">
+                                </div>
+                                <h2
+                                    class="text-highlight font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl ">CỦA
+                                    CHƯƠNG TRÌNH</h2>
+                            </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flight Booking</title>
+                            <p
+                                class="text-gray-600 mt-4 leading-relaxed max-lg:text-sm ">
+                                UBND xã phối hợp cùng Trường Cao đẳng FPT
+                                Polytechnic cơ
+                                sở Hà Nội triển khai dự án xây dựng hệ thống
+                                quản lý
+                                Liệt sỹ trực tuyến và phục chế ảnh Liệt sỹ nhằm
+                                lưu
+                                giữ
+                                ký ức, tri ân và trao gửi những bức ảnh rõ nét,
+                                trang
+                                trọng nhất đến từng gia đình. Dự án góp phần bảo
+                                tồn
+                                giá
+                                trị lịch sử, kết nối thế hệ trẻ với truyền thống
+                                uống
+                                nước nhớ nguồn của dân tộc.
+                            </p>
+                        </div>
+                        <div
+                            class="fake-shadow absolute -z-10 rounded-2xl left-1/2 -bottom-6 transform -translate-x-1/2 h-12 w-[50%]  "></div>
+                    </div>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/style.css">
-</head>
+                </section>
 
-<body class="text-text-primary">
-  <header>
-  <div class="mt-7.5 container mx-auto flex justify-between items-center">
-    <div class="logo">
-      <img src="./logo.svg" class="w-60" alt="Logo vemaybayso.vn" />
-    </div>
-    <div class="info flex items-center gap-6 max-md:hidden">
-      <form class="search border-b-1 flex gap-3.5 p-3.5 w-2xs">
-        <button class="cursor-pointer">
-          <img src="./header/search.svg" alt="Icon Search" />
-        </button>
-        <input
-          type="text"
-          class="text-xl outline-0 w-full"
-          placeholder="Tìm kiếm"
-        />
-      </form>
-      <a href="">
-        <img src="./header/home.svg" class="w-6" alt="Icon home" />
-      </a>
-      <a href="">
-        <img src="./header/facebook.svg" class="w-6" alt="Icon facebook" />
-      </a>
-      <a href="">
-        <img src="./header/tiktok.svg" class="w-6" alt="Icon tiktok" />
-      </a>
-      <a href="tel:0919005320" class="text-text-primary text-2xl font-bold inline">
-        <img src="./header/phone.svg" alt="Icon phone" class="inline-block" />
-        <span>09.1900.5320</span>
-      </a>
-    </div>
-  </div>
-</header>
+                <!-- MỤC TIÊU -->
+                <section id="muc-tieu"
+                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center max-w-6xl aos-init"
+                    data-aos="fade-up">
+                    <div
+                        class="flex flex-col gap-3 justify-center items-start">
+                        <div class="flex gap-2">
+                            <img loading="lazy" src="./start.png"
+                                alt="start"
+                                class="w-10 h-10">
+                            <h3
+                                class="text-info font-extrabold text-4xl max-lg:text-3xl font-title max-md:text-5xl max-sm:text-3xl">
+                                MỤC TIÊU CHÍNH
+                            </h3>
+                        </div>
 
-    <section class="container mx-auto mt-7.5 relative max-lg:static max-md:w-full" id="formSearch">
-  <div class="bg-[#CAF0F8] rounded-t-xl ">
-    <ul class="flex gap-2 justify-start items-center overflow-x-scroll" style="overflow: auto; scrollbar-width: none; -ms-overflow-style: none;">
-      <li>
-        <a href="#" class=" text-accent whitespace-nowrap p-4 font-semibold flex gap-2 items-center">
-          <img src="./nav/vemaybay.svg" alt>
-          Vé máy bay</a>
-      </li>
-      <li><a href="#" class=" text-text-primary whitespace-nowrap p-4 font-semibold flex gap-2 items-center">
-          <img src="./nav/khachsan.svg" alt>
-          Khách sạn</a></li>
-      <li><a href="#" class=" text-text-primary whitespace-nowrap p-4 font-semibold flex gap-2 items-center">
-          <img src="./nav/tour.svg" alt>
-          Tour</a></li>
-      <li><a href="#" class=" text-text-primary whitespace-nowrap p-4 font-semibold flex gap-2 items-center">
-          <img src="./nav/vecongvien.svg" alt>
-          Vé công viên</a></li>
-      <li><a href="#" class=" text-text-primary whitespace-nowrap p-4 font-semibold flex gap-2 items-center">
-          <img src="./nav/khampha.svg" alt>
-          Khám phá</a></li>
-      <li>
-        <a href="#" class=" text-text-primary whitespace-nowrap p-4 font-semibold flex gap-2 items-center">
-          <img src="./nav/tracuu.svg" alt>
-          Tra cứu vé</a>
-      </li>
-    </ul>
-  </div>
-  <div class="bg-primary text-white p-4 shadow-lg">
-    <form class="w-full" method="post">
-      <input type="text" class="hidden" id="departure-point-value" name="departure_point" value="HAN" />
-      <!-- Điểm đi -->
-      <input type="text" class="hidden" id="arrival-point-value" name="arrival_point" value="SGN" />
-      <!-- Điểm đến -->
-      <input type="text" class="hidden" id="departure-date-value" name="departure_date" />
-      <!-- Ngày đi -->
-      <input type="text" class="hidden" id="return-date-value" name="return_date" />
-      <!-- Ngày về -->
-      <div class="flex flex-wrap items-center gap-5 max-xl:justify-between">
-        <div class="flex gap-5">
-          <label class="inline-flex items-center gap-2 cursor-pointer">
-            <input type="radio" name="trip" value="one_way" id="one_way" class="size-4" checked />
-            <span class="text-sm">Một chiều</span>
-          </label>
-          <label class="inline-flex items-center gap-2 cursor-pointer">
-            <input type="radio" name="trip" value="two_way" id="two_way" class="size-4" />
-            <span class="text-sm">Khứ hồi</span>
-          </label>
-        </div>
-        <div type="button" class="relative cursor-pointer">
-          <div class="flex gap-2" id="person-input">
-            <img src="./search/member.svg" alt="Icon member" />
-            <span id="render-person">Số lượng hành khách</span>
-            <img src="./search/drop-dow.svg" alt="Icon member" />
-          </div>
-          <!-- START QUANTITY -->
-          <div id="quantity-modal" class="w-90 hidden bg-white flex flex-col gap-8 max-w-[960px] p-6 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] absolute top-8 max-xl:right-0 max-xl:left-auto max-sm:right-auto max-sm:left-0 max-sm:w-[73vw] left-0 z-9999 text-text-primary ">
-            <div class="flex gap-2 items-center">
-              <img src="./search/user-plus.svg" alt />
-              <p class="font-semibold">Số lượng hành khách</p>
-            </div>
-            <div>
-              <div data-type="adult-passenger-value" class="person-input-change flex justify-between border-b border-[#B3B0D8] py-5">
-                <p>Người lớn</p>
-                <div class="flex gap-5">
-                  <div class="minus-button">
-                    <img src="./search/minus.svg" alt />
-                  </div>
-                  <input type="text" class="max-w-3 outline-none" name="adult_passenger" value="1" />
-                  <div class="plus-button">
-                    <img src="./search/plus.svg" alt  />
-                  </div>
-                </div>
-              </div>
-              <div data-type="child-passenger-value" class="person-input-change flex justify-between border-b border-[#B3B0D8] py-5">
-                <p>Trẻ em <span class="ml-2 text-sm text-[#B3B0D8]">2-11</span></p>
-                <div class="flex gap-5">
-                  <div class="minus-button">
-                    <img src="./search/minus.svg" alt />
-                  </div>
-                  <input type="text" class="max-w-3 outline-none" name="child_passenger" value="0" />
-                  <div class="plus-button">
-                    <img src="./search/plus.svg" alt />
-                  </div>
-                </div>
-              </div>
-              <div data-type="infant-passenger-value" class="person-input-change flex justify-between py-5">
-                <p>Em bé<span class="ml-2 text-sm text-[#B3B0D8]">Dưới
-                    2</span></p>
-                <div class="flex gap-5">
-                  <div class="minus-button">
-                    <img src="./search/minus.svg" alt />
-                  </div>
-                  <input type="text" class="max-w-3 outline-none" name="infant_passenger" value="0" />
-                  <div class="plus-button">
-                    <img src="./search/plus.svg" alt />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="bg-primary text-white font-semibold w-full py-2.5 rounded-xl text-center cursor-pointer" onclick="
-                document.getElementById('quantity-modal').classList.add('hidden');
-              ">
-                Xác nhận
-              </div>
-            </div>
-          </div>
-          <!--END  QUANTITY -->
-        </div>
-      </div>
-      <div class="justify-between gap-3 my-2 grid grid-cols-4 max-xl:grid-cols-2 max-sm:grid-cols-1" id="form-search-input">
-        <div class="bg-white rounded-md flex justify-between items-center cursor-pointer" id="departure-point-input">
-          <div class="p-3">
-            <div class="flex gap-2">
-              <img src="./search/plane-start.svg" alt="icon plane" width="20" />
-              <span class="text-text-primary opacity-70 text-sm">Điểm khởi hành</span>
-            </div>
-            <p class="text-text-primary text-lg font-bold line-clamp-1 display">Hà
-              Nội (HAN)</p>
-          </div>
-          <div class="p-4 border-l border-l-[#D3D9DC]">
-            <img src="./search/drop-dow-gray.svg" alt="icon drop dow" />
-          </div>
-        </div>
-        <div class="bg-white rounded-md flex justify-between items-center cursor-pointer" id="arrival-point-input">
-          <div class="p-3">
-            <div class="flex gap-2 items-end">
-              <img src="./search/plane-start.svg" alt="icon plane" width="20" />
-              <span class="text-text-primary opacity-70 text-sm">Điểm đến</span>
-            </div>
-            <p class="text-text-primary text-lg font-bold line-clamp-1 display">Hồ
-              Chí Minh (SGN)</p>
-          </div>
-          <div class="p-4 border-l border-l-[#D3D9DC]">
-            <img src="./search/drop-dow-gray.svg" alt="icon drop dow" />
-          </div>
-        </div>
-        <div class="bg-white rounded-md  flex justify-between items-center max-xl:col-span-2 max-sm:col-span-1 cursor-pointer" id="departure-date-input">
-          <div class="p-3">
-            <div class="flex gap-2 items-end">
-              <img src="./search/calender.svg" alt="icon plane" width="20" />
-              <span class="text-text-primary opacity-70 text-sm">Ngày đi</span>
-            </div>
-            <p class="text-text-primary text-lg font-bold line-clamp-1 display">20/11/2025</p>
-          </div>
-          <div class="p-4 border-l border-l-[#D3D9DC]">
-            <img src="./search/drop-dow-gray.svg" alt="icon drop dow" />
-          </div>
-        </div>
-        <div class="bg-white rounded-md flex justify-between items-center hidden cursor-pointer" id="return-date-input">
-          <div class="p-3">
-            <div class="flex gap-2 items-end">
-              <img src="./search/calender.svg" alt="icon plane" width="20" />
-              <span class="text-text-primary opacity-70 text-sm">Ngày về</span>
-            </div>
-            <p class="text-text-primary text-lg font-bold line-clamp-1 display">26/11/2025</p>
-          </div>
-          <div class="p-4 border-l border-l-[#D3D9DC]">
-            <img src="./search/drop-dow-gray.svg" alt="icon drop dow" />
-          </div>
-        </div>
-        <div class="bg-accent rounded-md max-xl:col-span-2 max-sm:col-span-1 max-xl:py-6">
-          <button class=" w-full h-full uppercase font-bold text-[22px]">Tìm
-            kiếm</button>
-        </div>
-      </div>
-    </form>
-    <!-- LOCATION -->
-    <div id="location-modal" class="hidden w-3xl bg-white flex flex-col gap-2 p-6 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] absolute left-10 right-10 z-9999 text-text-primary max-lg:fixed max-lg:left-0 max-lg:bottom-0 max-lg:right-0 max-lg:top-30 max-lg:w-screen max-sm:p-3 overflow-y-scroll max-lg:max-h-screen">
-      <div class="items-center gap-2 flex flex-wrap justify-start">
-        <label class="flex items-center w-full gap-1 rounded-xl border border-[#CAF0F8] px-4 py-1">
-          <div class="mr-2">
-            <img src="./search/search.svg" alt width="20px" />
-          </div>
-          <div>
-            <p class="text-sm">Nhập Mã Sân bay hoặc Tên Thành phố:</p>
-            <input type="text" class="w-full text-sm outline-none" placeholder="Ví dụ: HAN" />
-          </div>
-        </label>
-        <div class="flex gap-2 overflow-x-scroll py-2.5" style="overflow: auto; scrollbar-width: none; -ms-overflow-style: none;">
-          <label class="bg-bg-info whitespace-nowrap w-fit bg-primary text-white rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="vietnam" checked />
-            <p>Việt Nam</p>
-          </label>
-          <label class="bg-bg-info whitespace-nowrap w-fit bg-primary text-white rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="vietnam" checked /> Việt Nam
-          </label>
-          <label class="bg-bg-info whitespace-nowrap w-fit bg-primary text-white rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="vietnam" checked /> Việt Nam
-          </label>
-          <label class="bg-bg-info whitespace-nowrap w-fit text-text-primary rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="chaua" /> Châu Á
-          </label>
-          <label class="bg-bg-info whitespace-nowrap w-fit text-text-primary rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="chauau" /> Châu Âu
-          </label>
-          <label class="bg-bg-info whitespace-nowrap w-fit text-text-primary rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="hoaky-canada" /> Hoa Kỳ - Canada
-          </label>
-          <label class="bg-bg-info whitespace-nowrap w-fit text-text-primary rounded-lg font-bold text-sm px-4 py-2 cursor-pointer">
-            <input hidden type="radio" name="typeCity" class="typeCity" value="chauuc-phi" /> Châu Úc - Phi
-          </label>
-        </div>
-      </div>
-      <div style="overflow: auto; scrollbar-width: none; -ms-overflow-style: none;" class="max-lg:h-full overflow-y-scroll shadow-[0px_8px_30px_rgba(0,0,0,0.15)] py-6 px-9 rounded-xl h-100">
-        <p class="text-accent font-bold mb-3">Nội địa - Sân bay tại Việt Nam</p>
-        <div class="  grid grid-cols-3 gap-7 max-sm:grid-cols-1 max-lg:grid-cols-2 " id="contaner-airport">
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">SGN</p>
-            <p class="text-lg name">Hồ Chí Minh</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">HPH</p>
-            <p class="text-lg name">Hải Phòng</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">THD</p>
-            <p class="text-lg name">Thanh Hóa</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VII</p>
-            <p class="text-lg name">Vinh</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">HPH</p>
-            <p class="text-lg name">Hải Phòng</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">THD</p>
-            <p class="text-lg name">Thanh Hóa</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VII</p>
-            <p class="text-lg name">Vinh</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">HPH</p>
-            <p class="text-lg name">Hải Phòng</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">THD</p>
-            <p class="text-lg name">Thanh Hóa</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VII</p>
-            <p class="text-lg name">Vinh</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">HPH</p>
-            <p class="text-lg name">Hải Phòng</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">THD</p>
-            <p class="text-lg name">Thanh Hóa</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VII</p>
-            <p class="text-lg name">Vinh</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VDH</p>
-            <p class="text-lg name">Quảng Bình</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VCA</p>
-            <p class="text-lg name">Cần Thơ</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VKG</p>
-            <p class="text-lg name">Kiên Giang</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VCL</p>
-            <p class="text-lg name">Quảng Nam</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">HUI</p>
-            <p class="text-lg name">Huế</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">PXU</p>
-            <p class="text-lg name">PleiKu</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">TBB</p>
-            <p class="text-lg name">Phú Yên</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">BMV</p>
-            <p class="text-lg name">Ban Mê Thuột</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">CXR</p>
-            <p class="text-lg name">Nha Trang</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">UIH</p>
-            <p class="text-lg name">Qui Nhơn</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">DLI</p>
-            <p class="text-lg name">Đà Lạt</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">CAH</p>
-            <p class="text-lg name">Cà Mau</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">PQC</p>
-            <p class="text-lg name">Phú Quốc</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VCS</p>
-            <p class="text-lg name">Côn Đảo</p>
-          </div>
-          <div class="flex gap-1 items-end border-b cursor-pointer border-[#CAF0F8]  location-option" data-citytype="vietnam">
-            <p class="font-bold text-3xl uppercase code">VDO</p>
-            <p class="text-lg name">Vân Đồn</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END LOCATION -->
-    <!-- DATE -->
-    <div  class="hidden max-lg:overflow-y-scroll  calendar-wrapper bg-white text-black flex flex-col gap-6 max-w-[760px] w-fit p-5 shadow-[0px_8px_30px_rgba(0,0,0,0.15)] absolute left-10 z-9999 max-sm:p-3 max-lg:fixed max-lg:left-0 max-lg:right-0 max-lg:top-0  max-lg:bottom-0 max-lg:w-screen" id="date-modal">
-      <div class="calendar-header ">
-        <div class="mb-4">
-          <p class=" text-primary max-sm:text-base">Quý khách vui lòng chọn ngày
-            bay</p>
-          <p class="text-xs text-[#00ABC0] max-sm:text-xs">
-            Ngày bay chiều đi phải được chọn trước ngày về. Ngày về chỉ được
-            trùng với ngày bay đi và ngày bay sau
-          </p>
-        </div>
-        <div class="flex gap-4 items-center">
-          <!-- <div class="border border-[#CAF0F8] py-2 px-3 flex-1 rounded-xl">
-            <p class="text-sm">Ngày đi</p>
-            <p class="text-lg font-bold">20/10/2025</p>
-          </div>
-          <div class="border border-[#CAF0F8] py-2 px-3 flex-1 rounded-xl">
-            <p class="text-sm">Ngày về</p>
-            <p class="text-lg font-bold">29/10/2025</p>
-          </div> -->
-          <div class="flex justify-between flex-2 px-5 max-sm:px-1">
-            <div class="flex gap-2 items-center ml-">
-              <div class="p-2.5 bg-primary rounded-4xl max-sm:p-1"></div>
-              <p class="text-xs">Ngày bay đã chọn</p>
-            </div>
-            <div class="flex gap-2 items-center">
-              <div class="p-2.5 bg-[#00ABC0] rounded-4xl p-1"></div>
-              <p class="text-xs">Ngày hiện tại</p>
-            </div>
-            <div class="flex gap-2 items-center">
-              <div class="p-2.5 bg-accent rounded-4xl p-1"></div>
-              <p class="text-xs">Ngày lễ</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="relative box-calendar ">
-        <div class="absolute top-0 right-0 left-0 flex justify-between items-center">
-          <button id="prev" class=" cursor-pointer p-6 text-xl">&lt;</button>
-          <button id="next" class=" cursor-pointer p-6 text-xl">&gt;</button>
-        </div>
-        <div id="calendar"></div>
-      </div>
-      <!-- <div id="range-info" class="selected-range"></div> -->
-    </div>
-    <!-- END DATE -->
-  </div>
-</section>
-      <section class="container overflow-hidden mx-auto mt-12 h-100">
-        <div class="relative">
-          <div id="slider" class="relative">
-            <div class="slide w-full rounded-[10px] flex justify-center h-full relative" style="display:block;">
-              <img class="object-cover object-center w-full max-h-100 min-h-100 rounded-[10px]"
-                src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&q=80&w=2070"
-                alt="">
-              <div class="absolute top-0 left-0 w-full h-full rounded-[10px] pointer-events-none"
-                style="background: linear-gradient(90deg, rgba(212,245,255,1) 5%, rgba(212,245,255,0) 43%);"></div>
-              <div class="absolute left-11 bottom-14">
-                <p class=" text-4xl font-bold">Khám phá đảo ngọc</p>
-                <p class=" font-bold text-[40px]">Phú Quốc</p>
-                <p class=" text-2xl">Chỉ từ</p>
-                <p class="text-accent text-[40px] font-bold">1,600k/pax</p>
-              </div>
-            </div>
-            <div class="slide w-full rounded-[10px] flex justify-center h-full relative" style="display:none;">
-              <img class="object-cover object-center w-full max-h-100 min-h-100 rounded-[10px]"
-                src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-                alt="">
-              <div class="absolute top-0 left-0 w-full h-full rounded-[10px] pointer-events-none"
-                style="background: linear-gradient(90deg, rgba(212,245,255,1) 5%, rgba(212,245,255,0) 43%);"></div>
-              <div class="absolute left-11 bottom-14">
-                <p class=" text-4xl font-bold">Khám phá Hà Nội</p>
-                <p class=" font-bold text-[40px]">Phú Quốc</p>
-                <p class=" text-2xl">Chỉ từ</p>
-                <p class="text-accent text-[40px] font-bold">1,600k/pax</p>
-              </div>
-            </div>
-            <div class="slide w-full rounded-[10px] flex justify-center h-full relative" style="display:none;">
-              <img class="object-cover object-center w-full max-h-100 min-h-100 rounded-[10px]"
-                src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-                alt="">
-              <div class="absolute top-0 left-0 w-full h-full rounded-[10px] pointer-events-none"
-                style="background: linear-gradient(90deg, rgba(212,245,255,1) 5%, rgba(212,245,255,0) 43%);"></div>
-              <div class="absolute left-11 bottom-14">
-                <p class=" text-4xl font-bold ">Khám phá đảo ngọc</p>
-                <p class=" font-bold text-[40px]">Phú Quốc</p>
-                <p class=" text-2xl">Chỉ từ</p>
-                <p class="text-accent text-[40px] font-bold">1,600k/pax</p>
-              </div>
-            </div>
-          </div>
-          <!-- Slide controls -->
-          <div class="absolute right-10 bottom-8 flex gap-2">
-            <button id="prevSlide"
-              class="cursor-pointer bg-[rgb(135,140,147,0.5)] bg-opacity-20 hover:bg-opacity-30 rounded-[10px] size-[50px] flex items-center justify-center z-10">
-              <svg width="24" height="24" fill="none">
-                <path d="M15.5 19 9.5 12 15.5 5" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" fill="none" />
-              </svg>
-            </button>
-            <button id="nextSlide"
-              class=" cursor-pointer bg-[rgb(135,140,147,0.5)] bg-opacity-50 hover:bg-opacity-30 rounded-[10px] size-[50px] flex items-center justify-center z-10">
-              <svg width="24" height="24" fill="none">
-                <path d="M8.5 5 14.5 12 8.5 19" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" fill="none" />
-              </svg>
-            </button>
-            <div>
-            </div>
-      </section>
-      <section class="container mx-auto mt-8">
-        <div class="header-section flex justify-between max-lg:flex-wrap gap-4">
-          <div>
-            <p class=" text-2xl font-bold">Chuyến bay có giá tốt</p>
-            <p class=" text-base">Tiết kiệm lên đến 200K cho mỗi chuyến bay</p>
-          </div>
-          <div class="font-bold">
-            <a class="text-accent text-base max-md:text-xs p-3">Phú Quốc</a>
-            <a class="text-base p-3 max-md:text-xs" href="">Đà Nắng</a>
-            <a class="text-base p-3 max-md:text-xs">Quy Nhớn</a>
-            <a class="text-base p-3 max-md:text-xs">...</a>
-          </div>
-        </div>
-        <div class="content mt-10">
-          <div class="flex gap-10 max-lg:flex-wrap">
-            <div class="w-2/5 max-lg:w-full">
-              <ul class="flex flex-col">
-                <li class="py-3.5 border-b-2 border-b-gray-300 flex justify-between">
-                  <div>
-                    <p class="font-bold text-base">Hà Nội - Hồ Chí Minh</p>
-                    <p class="text-highlight text-sm">Khởi hành ngày 20/11/2025</p>
-                  </div>
-                  <div>
-                    <div class="text-accent font-bold text-base">2,360,000đ > ></div>
-                  </div>
-                </li>
-                <li class="py-3.5 border-b-2 border-b-gray-300 flex justify-between">
-                  <div>
-                    <p class="font-bold text-base">Hà Nội - Hồ Chí Minh</p>
-                    <p class="text-highlight text-sm">Khởi hành ngày 20/11/2025</p>
-                  </div>
-                  <div>
-                    <div class="text-accent font-bold text-base">2,360,000đ > ></div>
-                  </div>
-                </li>
-                <li class="py-3.5 border-b-2 border-b-gray-300 flex justify-between">
-                  <div>
-                    <p class="font-bold text-base">Hà Nội - Hồ Chí Minh</p>
-                    <p class="text-highlight text-sm">Khởi hành ngày 20/11/2025</p>
-                  </div>
-                  <div>
-                    <div class="text-accent font-bold text-base">2,360,000đ > ></div>
-                  </div>
-                </li>
-                <li class="py-3.5 border-b-2 border-b-gray-300 flex justify-between">
-                  <div>
-                    <p class="font-bold text-base">Hà Nội - Hồ Chí Minh</p>
-                    <p class="text-highlight text-sm">Khởi hành ngày 20/11/2025</p>
-                  </div>
-                  <div>
-                    <div class="text-accent font-bold text-base">2,360,000đ > ></div>
-                  </div>
-                </li>
-                <li class="py-3.5  flex justify-between">
-                  <div>
-                    <p class="font-bold text-base">Hà Nội - Hồ Chí Minh</p>
-                    <p class="text-highlight text-sm">Khởi hành ngày 20/11/2025</p>
-                  </div>
-                  <div>
-                    <div class="text-accent font-bold text-base">2,360,000đ > ></div>
-                  </div>
-                </li>
-              </ul>
-              <p class="ml-auto w-fit text-base font-bold"><a href=""> Tìm thêm chuyến bay >></a></p>
-            </div>
-            <div class="w-3/5 flex gap-6 justify-between max-lg:w-full max-sm:flex-wrap">
-              
-<div class="w-full border border-[#D3D9DC] rounded-xl overflow-hidden relative">
-  <span
-    class="absolute top-4 left-4 tag py-1 text-white font-bold px-3 bg-accent rounded-xl inline-block"
-    >Giảm 10%</span
-  >
-  <div class="h-4/9 w-full">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-  </div>
-  <div class="flex flex-col justify-between px-2.5 py-4 h-5/9">
-    <div class="text-primary">
-      <p class="text-base font-bold line-clamp-2">
-        JW Marriott Phu Quoc Emerald Bay Resort & Spa
-      </p>
-      <p class="line-clamp-2">Khem Beach, An Thới, Phú Quốc, Kiên Giang</p>
-    </div>
-    <p class="text-accent font-bold text-sm">
-      <span class="text-2xl">2,800</span> <span class="text-primary">/đêm >></span> <br />,000 VND
-    </p>
-  </div>
-</div>
+                        <div class="text-gray-600 leading-relaxed ">
+                            <ul class="max-md:text-xl max-sm:text-base">
+                                <li>Ghi nhận và lưu giữ thông tin, hình ảnh
+                                    của
+                                    các
+                                    Liệt sỹ trên địa bàn xã.</li>
+                                <li>Phục chế ảnh cũ, ảnh mờ, ảnh hư hỏng
+                                    thành
+                                    ảnh rõ
+                                    nét, trang trọng.</li>
+                                <li>Xây dựng trang web quản lý Liệt sỹ lưu
+                                    trữ
+                                    lâu
+                                    dài.</li>
+                                <li>In và trao tận tay ảnh phục chế cho các
+                                    gia
+                                    đình.
+                                </li>
+                                <li>Tôn vinh, nhắc nhớ và tri ân thế hệ đi
+                                    trước.</li>
+                                <li>Dễ dàng tra cứu – chia sẻ – lưu giữ cho
+                                    con
+                                    cháu
+                                    đời sau.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-<div class="w-full border border-[#D3D9DC] rounded-xl overflow-hidden relative">
-  <span
-    class="absolute top-4 left-4 tag py-1 text-white font-bold px-3 bg-accent rounded-xl inline-block"
-    >Giảm 10%</span
-  >
-  <div class="h-4/9 w-full">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-  </div>
-  <div class="flex flex-col justify-between px-2.5 py-4 h-5/9">
-    <div class="text-primary">
-      <p class="text-base font-bold line-clamp-2">
-        JW Marriott Phu Quoc Emerald Bay Resort & Spa
-      </p>
-      <p class="line-clamp-2">Khem Beach, An Thới, Phú Quốc, Kiên Giang</p>
-    </div>
-    <p class="text-accent font-bold text-sm">
-      <span class="text-2xl">2,800</span> <span class="text-primary">/đêm >></span> <br />,000 VND
-    </p>
-  </div>
-</div>
+                    <img loading="lazy"
+                        src="./mucTieuPlaceholder.png"
+                        class="rounded-xl zoom-hover" />
+                </section>
 
+                <!-- QUY TRÌNH -->
+                <section id="quy-trinh"
+                    class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center max-w-6xl aos-init"
+                    data-aos="fade-up">
+                    <img loading="lazy"
+                        src="./quyTrinhPlaceholder.png"
+                        class="rounded-xl zoom-hover order-2 md:order-1" />
+                    <div
+                        class="order-1 md:order-2 flex flex-col gap-3 justify-center items-start">
 
+                        <div class="flex gap-2">
+                            <img loading="lazy" src="./start.png"
+                                alt="start"
+                                class="w-10 h-10">
+                            <h3
+                                class="text-info font-extrabold text-4xl max-lg:text-3xl font-title max-md:text-5xl max-sm:text-3xl">
+                                QUY TRÌNH THỰC HIỆN
+                            </h3>
+                        </div>
+                        <div
+                            class="text-gray-600 leading-relaxed max-md:text-xl max-sm:text-base">
+                            <ul>
+                                <li>UBND xã thông báo rộng rãi đến các gia
+                                    đình
+                                    có
+                                    Liệt sỹ về dự án.</li>
+                                <li>Thu thập thông tin, hình ảnh gốc của
+                                    Liệt sỹ
+                                    từ
+                                    gia đình.</li>
+                                <li>Phục chế ảnh bằng công nghệ AI và chuyên
+                                    gia
+                                    đồ
+                                    họa.</li>
+                                <li>Lưu trữ thông tin, ảnh lên hệ thống web
+                                    quản
+                                    lý
+                                    Liệt sỹ của xã.</li>
+                                <li>In ảnh trang trọng và trao tận tay gia
+                                    đình
+                                    Liệt sỹ.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ẢNH MẪU -->
+                <section id="anh-mau"
+                    class=" relative max-sm:mt-30 max-sm:mb-20  mx-auto aos-init"
+                    data-aos="fade-up">
+                    <div
+                        class="  w-[70%] max-lg:w-[90%] absolute -top-32 left-1/2 transform -translate-x-1/2 translate-y-1/2  z-999 max-sm:-top-60">
+                        <div
+                            class="zoom-hover bg-white rounded-4xl  py-16 p-8 max-lg:p-4 text-center flex flex-col gap-0 items-center justify-center">
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center max-md:gap-1">
+                                <div class="flex gap-2">
+                                    <img loading="lazy" src="./start.png"
+                                        alt="start"
+                                        class="w-10 h-10">
+                                    <h3
+                                        class="text-info font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl">
+                                        ẢNH MẪU
+                                    </h3>
+                                    <img loading="lazy" src="./start.png"
+                                        alt="start"
+                                        class="w-10 h-10">
+                                </div>
+                                <h2
+                                    class="text-highlight font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl ">ĐÃ
+                                    PHỤC DỰNG</h2>
+                            </div>
+                            <strong
+                                class="text-gray-600 mt-4 leading-relaxed text-xl max-lg:text-base max-sm:text-sm">
+                                Hình ảnh được cung cấp bởi Xã. <br> Được chỉnh
+                                sửa
+                                tại
+                                Cao đẳng FPT Polytechnic Hà Nội
+                            </strong>
+                        </div>
+                    </div>
+                    <img src="./bannerPhucDung.png" alt="banner phục dưỡng"
+                        class="w-full object-cover max-sm:scale-150 " />
+                    <div
+                        class="w-[70%] max-sm:w-full mx-auto mt-16 px-4 absolute top-115 max-sm:top-0 z-10 left-1/2 transform -translate-x-1/2 max-lg:top-50">
+                        <div class="grid grid-cols-2 grid-rows-2 gap-10 ">
+                            <div>
+                                <img loading="lazy" src="./phucche1.png" alt
+                                    class="rounded-xl zoom-hover max-sm:w-200">
+                            </div>
+                            <div>
+                                <img loading="lazy" src="./phucche2.png" alt
+                                    class="rounded-xl zoom-hover max-sm:w-200">
+                            </div>
+                            <div>
+                                <img loading="lazy" src="./phucche3.png" alt
+                                    class="rounded-xl zoom-hover max-sm:w-200">
+                            </div>
+                            <div>
+                                <img loading="lazy" src="./phucche4.png" alt
+                                    class="rounded-xl zoom-hover max-sm:w-200">
+                            </div>
+                            <div>
+                                <img loading="lazy" src="./phucche5.png" alt
+                                    class="rounded-xl zoom-hover max-sm:w-200  ">
+                            </div>
+                            <div>
+                                <img loading="lazy" src="./phucche6.png" alt
+                                    class="rounded-xl zoom-hover max-sm:w-200">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="fake-shadow absolute -z-10 rounded-2xl left-1/2 -bottom-6 transform -translate-x-1/2 h-12 w-[50%]  "></div> -->
+
+                </section>
+
+                <!-- QR / GỬI ẢNH -->
+                <section id="gui-anh"
+                    class="max-sm:w-full w-[70%] mx-auto px-4 flex max-md:flex-col gap-10 items-center rounded-4xl py-10 relative bg-white max-md:w-[90%] max-w-6xl aos-init"
+                    data-aos="fade-up">
+                    <div
+                        class="fake-shadow absolute -z-10 rounded-2xl left-1/2 -bottom-6 transform -translate-x-1/2 h-12 w-[50%] flex-1 "></div>
+                    <div
+                        class="flex flex-col gap-3 justify-center items-center max-md:gap-1">
+                        <div class="flex gap-2">
+                            <img loading="lazy" src="./start.png" alt="start"
+                                class="w-10 h-10">
+                            <h3
+                                class="text-info font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl">
+                                TRUY CẬP LINK
+                            </h3>
+                            <img loading="lazy" src="./start.png" alt="start"
+                                class="w-10 h-10">
+                        </div>
+                        <h2
+                            class="text-highlight font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl ">HOẶC
+                            QUÉT MÃ QR</h2>
+                        <p
+                            class="text-center text-[18px] max-lg:text-[15px]">Quý
+                            vị
+                            vui lòng bấm vào
+                            đường
+                            link hoặc quét mã QR để gửi thông tin lại cho chúng
+                            tôi.
+                            <br> Xin chân thành cảm ơn.</p>
+                        <div
+                            class=" relative max-w-[550px] max-md:mt-10">
+                            <a
+                                href="https://docs.google.com/forms/d/1_jwRXBHgq8DYBizQGtrVMlxKXDhRifJzrQVgbQLt400/viewform?edit_requested=true">
+                                <img src="./titleTruyCap.png" alt
+                                    class="w-80 zoom-hover lacnhe">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <img loading="lazy" src="./QR.png"
+                            class="w-100 rounded-xl max-sm:w-70 zoom-hover" />
+                    </div>
+                </section>
+                <!-- CONTACT -->
+                <section id="contact"
+                    class=" flex max-md:flex-col gap-10 items-center w-6xl max-md:w-screen mx-auto aos-init"
+                    data-aos="fade-up">
+                    <div
+                        class="ml-20 max-md:ml-0 max-lg:w-full flex-1 max-md:w-[90%]">
+                        <h3
+                            class="text-center flex flex-col items-center justify-center gap-2 mb-10 ">
+                            <div
+                                class="flex flex-col gap-3 justify-center items-center max-md:gap-1">
+                                <div class="flex gap-2">
+                                    <img loading="lazy" src="./start.png"
+                                        alt="start"
+                                        class="w-10 h-10">
+                                    <h3
+                                        class="text-info font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl">
+                                        LIÊN HỆ
+                                    </h3>
+                                    <img loading="lazy" src="./start.png"
+                                        alt="start"
+                                        class="w-10 h-10">
+                                </div>
+                                <h2
+                                    class="text-highlight font-extrabold text-4xl max-lg:text-3xl font-title max-sm:text-2xl ">VỚI
+                                    CHÚNG TÔI</h2>
+
+                            </div>
+
+                            <p>Đại diện Cao đẳng FPT Polytechnic Hà Nội</p>
+                        </h3>
+                        <form id="contactForm" class="flex flex-col gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label for="name"
+                                    class="font-semibold text-gray-700">Họ và
+                                    tên:</label>
+                                <input type="text" id="name" name="name"
+                                    required
+                                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary transition"
+                                    placeholder="Nhập họ và tên của bạn">
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="email"
+                                    class="font-semibold text-gray-700">Email:</label>
+                                <input type="email" id="email" name="email"
+                                    required
+                                    class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary transition"
+                                    placeholder="example@email.com">
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label for="message"
+                                    class="font-semibold text-gray-700">Nội dung
+                                    liên hệ:</label>
+                                <textarea id="message" name="message" required
+                                    class="border border-gray-300 rounded-lg px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-primary transition"
+                                    placeholder="Vui lòng nhập nội dung liên hệ của bạn..."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="bg-primary cursor-pointer text-white font-bold py-3 px-4 rounded-lg hover:bg-info transition duration-300 active:scale-95">
+                                Gửi thông tin
+                            </button>
+                        </form>
+                    </div>
+                    <img loading="lazy"
+                        src="./imgContact.png"
+                        class="rounded-xl w-120 max-md:w-full zoom-hover" />
+                </section>
+
+                <!-- GO TO TOP BUTTON -->
+                <div
+                    class="fixed bottom-10 right-10 max-md:right-10 z-9999 flex flex-col items-center gap-5">
+                    <a href="#home" id="logoFacebook"
+                        class=" bg-primary text-white rounded-full flex items-center justify-center cursor-pointer"
+                        title="Lên đầu trang">
+                        <img src="./logo-face.png" alt="logo facebook"
+                            class="w-15 h-15 rounded-full">
+                    </a>
+                    <a href="#home" id="logoZalo"
+                        class=" bg-primary text-white rounded-full flex items-center justify-center cursor-pointer"
+                        title="Lên đầu trang">
+                        <img src="./logo-zalo.jpg" alt="logo zalo"
+                            class="w-15 h-15 rounded-full">
+                    </a>
+
+                    <!-- <button id="goToTopBtn"
+                class="go-to-top bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center cursor-pointer"
+                title="Lên đầu trang">
+                <span class="text-white text-xl font-bold">↑</span>
+            </button> -->
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="container mx-auto mt-10">
-        <div class="header-section flex justify-between max-lg:flex-wrap gap-4">
-          <div>
-            <p class=" text-2xl font-bold">Điểm đến hấp dẫn</p>
-            <p class=" text-base">Khám phá trọn vẹn một hành trình</p>
-          </div>
-          <div class="font-bold">
-            <a class="text-accent text-base max-md:text-xs p-3">Phú Quốc</a>
-            <a class="text-base p-3 max-md:text-xs" href="">Đà Nắng</a>
-            <a class="text-base p-3 max-md:text-xs">Quy Nhớn</a>
-            <a class="text-base p-3 max-md:text-xs">...</a>
-          </div>
-        </div>
-        <div class="content mt-10">
-          <div class="grid grid-cols-4 gap-6.5 max-sm:grid-cols-1 max-lg:grid-cols-2 ">
-            
-<div
-  class="w-full min-h-[430px] border border-[#D3D9DC] rounded-xl overflow-hidden shadow-2xl"
->
-  <div class="h-46 w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute bottom-0 right-0 left-0 top-0 p-4 flex flex-col justify-between"
-    >
-      <div class="text-right">
-        <p
-          class="tag text-white font-bold py-1 px-3 bg-highlight rounded-xl inline-block"
-        >
-          Giảm 10%
-        </p>
-      </div>
-      <div>
-        <p class="text-white font-bold text-base">
-          Take off to Tokyo sale<br />
-          Sakura show
-        </p>
-        <p class="text-white text-xs">Hết hạn sau: 34 ngày 12:08:17</p>
-      </div>
-    </div>
-    <div class="absolute -bottom-5 right-4 w-fit">
-      <img src="./airline/VN.svg" alt="Logo airline" />
-    </div>
-  </div>
-  <div class="flex flex-col justify-between p-4 h-61.5">
-    <div>
-      <p class="text-sm font-bold">Dubai - Tokyo / Asia</p>
-    </div>
-    <div class="flex w-full justify-between">
-      <div>
-        <p class="text-xs font-bold max-w-[74px]">
-          VÉ MÁY BAY QUỐC TẾ
-          <img
-            src="./search/plane-start.svg"
-            alt="icon plane"
-            class="w-3.5 inline"
-          />
-        </p>
-      </div>
-      <div class="text-end">
-        <ul class="flex items-center">
-          <li><img src="./flight-card/start-none.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-        </ul>
-        <p class="text-[10px] font-bold">25 Người xem</p>
-      </div>
-    </div>
-    <div>
-      <p class="text-xs line-clamp-4">
-        Lorem ipsum dolor, sit amet consec r, sit amet consectetur adipisic
-        tetur adipisic r, sit amet consectetur adipisic ing elit. Saepe vero
-        officia sequi a blanditiis.
-      </p>
-    </div>
-    <div class="flex justify-between items-center">
-      <div>
-        <a
-          href=""
-          class="text-sm uppercase font-bold bg-accent text-white px-5 py-1.5 max-xl:px-3 max-xl:py-1 max-lg:px-5 max-lg:py-1.5 rounded-br-3xl rounded-tl-3xl"
-          >Chi Tiết</a
-        >
-      </div>
-      <div>
-        <p
-          class="price text-accent font-extrabold text-base max-lg:text-base max-xl:text-sm"
-        >
-          2,800,000 đ
-        </p>
-        <p class="price-sale font-bold text-xs line-through max-xl:text-xs">
-          39,680,000 đ
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="w-full min-h-[430px] border border-[#D3D9DC] rounded-xl overflow-hidden shadow-2xl"
->
-  <div class="h-46 w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute bottom-0 right-0 left-0 top-0 p-4 flex flex-col justify-between"
-    >
-      <div class="text-right">
-        <p
-          class="tag text-white font-bold py-1 px-3 bg-highlight rounded-xl inline-block"
-        >
-          Giảm 10%
-        </p>
-      </div>
-      <div>
-        <p class="text-white font-bold text-base">
-          Take off to Tokyo sale<br />
-          Sakura show
-        </p>
-        <p class="text-white text-xs">Hết hạn sau: 34 ngày 12:08:17</p>
-      </div>
-    </div>
-    <div class="absolute -bottom-5 right-4 w-fit">
-      <img src="./airline/VN.svg" alt="Logo airline" />
-    </div>
-  </div>
-  <div class="flex flex-col justify-between p-4 h-61.5">
-    <div>
-      <p class="text-sm font-bold">Dubai - Tokyo / Asia</p>
-    </div>
-    <div class="flex w-full justify-between">
-      <div>
-        <p class="text-xs font-bold max-w-[74px]">
-          VÉ MÁY BAY QUỐC TẾ
-          <img
-            src="./search/plane-start.svg"
-            alt="icon plane"
-            class="w-3.5 inline"
-          />
-        </p>
-      </div>
-      <div class="text-end">
-        <ul class="flex items-center">
-          <li><img src="./flight-card/start-none.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-        </ul>
-        <p class="text-[10px] font-bold">25 Người xem</p>
-      </div>
-    </div>
-    <div>
-      <p class="text-xs line-clamp-4">
-        Lorem ipsum dolor, sit amet consec r, sit amet consectetur adipisic
-        tetur adipisic r, sit amet consectetur adipisic ing elit. Saepe vero
-        officia sequi a blanditiis.
-      </p>
-    </div>
-    <div class="flex justify-between items-center">
-      <div>
-        <a
-          href=""
-          class="text-sm uppercase font-bold bg-accent text-white px-5 py-1.5 max-xl:px-3 max-xl:py-1 max-lg:px-5 max-lg:py-1.5 rounded-br-3xl rounded-tl-3xl"
-          >Chi Tiết</a
-        >
-      </div>
-      <div>
-        <p
-          class="price text-accent font-extrabold text-base max-lg:text-base max-xl:text-sm"
-        >
-          2,800,000 đ
-        </p>
-        <p class="price-sale font-bold text-xs line-through max-xl:text-xs">
-          39,680,000 đ
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="w-full min-h-[430px] border border-[#D3D9DC] rounded-xl overflow-hidden shadow-2xl"
->
-  <div class="h-46 w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute bottom-0 right-0 left-0 top-0 p-4 flex flex-col justify-between"
-    >
-      <div class="text-right">
-        <p
-          class="tag text-white font-bold py-1 px-3 bg-highlight rounded-xl inline-block"
-        >
-          Giảm 10%
-        </p>
-      </div>
-      <div>
-        <p class="text-white font-bold text-base">
-          Take off to Tokyo sale<br />
-          Sakura show
-        </p>
-        <p class="text-white text-xs">Hết hạn sau: 34 ngày 12:08:17</p>
-      </div>
-    </div>
-    <div class="absolute -bottom-5 right-4 w-fit">
-      <img src="./airline/VN.svg" alt="Logo airline" />
-    </div>
-  </div>
-  <div class="flex flex-col justify-between p-4 h-61.5">
-    <div>
-      <p class="text-sm font-bold">Dubai - Tokyo / Asia</p>
-    </div>
-    <div class="flex w-full justify-between">
-      <div>
-        <p class="text-xs font-bold max-w-[74px]">
-          VÉ MÁY BAY QUỐC TẾ
-          <img
-            src="./search/plane-start.svg"
-            alt="icon plane"
-            class="w-3.5 inline"
-          />
-        </p>
-      </div>
-      <div class="text-end">
-        <ul class="flex items-center">
-          <li><img src="./flight-card/start-none.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-        </ul>
-        <p class="text-[10px] font-bold">25 Người xem</p>
-      </div>
-    </div>
-    <div>
-      <p class="text-xs line-clamp-4">
-        Lorem ipsum dolor, sit amet consec r, sit amet consectetur adipisic
-        tetur adipisic r, sit amet consectetur adipisic ing elit. Saepe vero
-        officia sequi a blanditiis.
-      </p>
-    </div>
-    <div class="flex justify-between items-center">
-      <div>
-        <a
-          href=""
-          class="text-sm uppercase font-bold bg-accent text-white px-5 py-1.5 max-xl:px-3 max-xl:py-1 max-lg:px-5 max-lg:py-1.5 rounded-br-3xl rounded-tl-3xl"
-          >Chi Tiết</a
-        >
-      </div>
-      <div>
-        <p
-          class="price text-accent font-extrabold text-base max-lg:text-base max-xl:text-sm"
-        >
-          2,800,000 đ
-        </p>
-        <p class="price-sale font-bold text-xs line-through max-xl:text-xs">
-          39,680,000 đ
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="w-full min-h-[430px] border border-[#D3D9DC] rounded-xl overflow-hidden shadow-2xl"
->
-  <div class="h-46 w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute bottom-0 right-0 left-0 top-0 p-4 flex flex-col justify-between"
-    >
-      <div class="text-right">
-        <p
-          class="tag text-white font-bold py-1 px-3 bg-highlight rounded-xl inline-block"
-        >
-          Giảm 10%
-        </p>
-      </div>
-      <div>
-        <p class="text-white font-bold text-base">
-          Take off to Tokyo sale<br />
-          Sakura show
-        </p>
-        <p class="text-white text-xs">Hết hạn sau: 34 ngày 12:08:17</p>
-      </div>
-    </div>
-    <div class="absolute -bottom-5 right-4 w-fit">
-      <img src="./airline/VN.svg" alt="Logo airline" />
-    </div>
-  </div>
-  <div class="flex flex-col justify-between p-4 h-61.5">
-    <div>
-      <p class="text-sm font-bold">Dubai - Tokyo / Asia</p>
-    </div>
-    <div class="flex w-full justify-between">
-      <div>
-        <p class="text-xs font-bold max-w-[74px]">
-          VÉ MÁY BAY QUỐC TẾ
-          <img
-            src="./search/plane-start.svg"
-            alt="icon plane"
-            class="w-3.5 inline"
-          />
-        </p>
-      </div>
-      <div class="text-end">
-        <ul class="flex items-center">
-          <li><img src="./flight-card/start-none.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-          <li><img src="./flight-card/start-pick.svg" alt="" /></li>
-        </ul>
-        <p class="text-[10px] font-bold">25 Người xem</p>
-      </div>
-    </div>
-    <div>
-      <p class="text-xs line-clamp-4">
-        Lorem ipsum dolor, sit amet consec r, sit amet consectetur adipisic
-        tetur adipisic r, sit amet consectetur adipisic ing elit. Saepe vero
-        officia sequi a blanditiis.
-      </p>
-    </div>
-    <div class="flex justify-between items-center">
-      <div>
-        <a
-          href=""
-          class="text-sm uppercase font-bold bg-accent text-white px-5 py-1.5 max-xl:px-3 max-xl:py-1 max-lg:px-5 max-lg:py-1.5 rounded-br-3xl rounded-tl-3xl"
-          >Chi Tiết</a
-        >
-      </div>
-      <div>
-        <p
-          class="price text-accent font-extrabold text-base max-lg:text-base max-xl:text-sm"
-        >
-          2,800,000 đ
-        </p>
-        <p class="price-sale font-bold text-xs line-through max-xl:text-xs">
-          39,680,000 đ
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-          </div>
-        </div>
-      </section>
-      <section class="container mx-auto mt-10">
-        <div class="header-section">
-          <p class="text-2xl font-bold">Thông tin hữu ích cho du khách</p>
-          <p class="text-base">Bạn có thể tìm hiểu thủ tục bay, điều kiện vé ở đây</p>
-        </div>
-        <div class="content mt-10">
-          <div class="grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-6">
-            <div class="p-4 border rounded-xl border-[#D3D9DC]">
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
+            <!-- FOOTER -->
+            <footer class=" relative">
+                <img loading="lazy" src="./bannerFooter.png" alt="banner footer"
+                    class="w-full object-cover max-lg:h-[400px]">
+                <div
+                    class="absolute flex top-0 bottom-0 left-0 right-0 items-center
+            justify-around gap-10 px-4 max-lg:flex-col max-lg:gap-5 max-lg:py-10">
+                    <div
+                        class="w-1/3 max-lg:w-full flex justify-end max-lg:justify-center">
+                        <img loading="lazy" src="./whiteLogo.png"
+                            alt="Logo FPT Polytechnic" class="w-50">
+                    </div>
+                    <div class="w-1/3 max-lg:w-full text-white font-bold">
+                        <h2 class="text-2xl mb-2 max-lg:text-xl">
+                            Thông tin liên hệ:
+                        </h2>
+                        <p class="max-lg:text-sm">
+                            caodang@fpt.edu.vn <br>
+                            0981 725 836 <br>
+                            Cổng Ong, Tòa nhà FPT Polytechnic, 13 phố Phan Tây
+                            Nhạc,
+                            phường Xuân Phương, TP Hà Nội <br>
+                            (024) 8582 0808
+                        </p>
+                    </div>
                 </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                  <div class="content hidden mt-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit alias modi dolores
-                      distinctio, adipisci blanditiis nam harum minus pariatur dolorem architecto hic voluptas!
-                      Voluptatem fugit mollitia eligendi aliquid laboriosam? it alias modi dolores distinctio, adipisci
-                      blanditiis nam harum minus pariatur dolorem architecto hic voluptas! Voluptatem fugit mollitia
-                      eligendi aliquid laboriosam?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 border rounded-xl border-[#D3D9DC]">
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 border-b border-[#D3D9DC] py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3 py-4.5">
-                <div>
-                  <img src="./question/question1.svg" alt="">
-                </div>
-                <div>
-                  <p class="text-base">Mua vé máy bay khuyến mãi có được hoàn và đổi vé không?</p>
-                </div>
-              </div>
-            </div>
-            <div class="py-28 px-14 border rounded-xl border-[#D3D9DC] max-xl:col-span-2 max-sm:col-span-1">
-              <div class="flex flex-col justify-between h-full min-h-40">
-                <div class="text-center">
-                  <p class="text-2xl font-bold">Câu hỏi chưa phù hợp?</p>
-                </div>
-                <div class="text-center">
-                  <a href=""
-                    class=" inline-block font-bold text-sm border-2 border-primary p-2.5 rounded-2xl mx-auto w-fit">Tôi
-                    cần giải đáp</a>
-                </div>
-                <div class="text-center">
-                  <p class="text-sm  mt-5">Chúng tôi sẽ cố gắng phản hồi sớm. Ngoài ra bạn có thể liên hệ tổng đài
-                    09.19005320</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            </footer>
         </div>
-      </section>
-      <section class="container mx-auto mt-10">
-        <div class="header-section flex justify-between max-lg:flex-wrap gap-4">
-          <div>
-            <p class=" text-2xl font-bold">Tin tức</p>
-            <p class=" text-base">Nắm bắt kịp thời các khám phá mới và thông tin khuyến mại</p>
-          </div>
-          <div class="font-bold">
-            <a class="text-accent text-base max-md:text-xs p-3">Khám phá</a>
-            <a class="text-base p-3 max-md:text-xs" href="">Khuyến mại</a>
-            <a class="text-base p-3 max-md:text-xs">Tin tức</a>
-            <a class="text-base p-3 max-md:text-xs">...</a>
-          </div>
-        </div>
-        <div class="content mt-10">
-          <div class="grid grid-cols-3 max-md:grid-cols-1  gap-5">
-            
-<div
-  class="w-full min-h-50 max-h-50 border border-[#D3D9DC] rounded-xl overflow-hidden"
->
-  <div class="h-full w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute top-0 left-0 w-full h-full rounded-[10px] pointer-events-none"
-      style="
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.1) 0%,
-          rgba(255, 255, 255, 0.3) 50%,
-          rgba(255, 255, 255, 1) 100%
-        );
-      "
-    ></div>
-    <div class="absolute bottom-0 right-0 left-0 top-0 p-4 flex items-end">
-      <div>
-        <p class="text-xl font-bold">
-          Khám phá vườn chim độc nhất vô nhị tại Phú Quốc
-        </p>
-        <p class="text-sm">Khám phá</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="w-full min-h-50 max-h-50 border border-[#D3D9DC] rounded-xl overflow-hidden"
->
-  <div class="h-full w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute top-0 left-0 w-full h-full rounded-[10px] pointer-events-none"
-      style="
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.1) 0%,
-          rgba(255, 255, 255, 0.3) 50%,
-          rgba(255, 255, 255, 1) 100%
-        );
-      "
-    ></div>
-    <div class="absolute bottom-0 right-0 left-0 top-0 p-4 flex items-end">
-      <div>
-        <p class="text-xl font-bold">
-          Khám phá vườn chim độc nhất vô nhị tại Phú Quốc
-        </p>
-        <p class="text-sm">Khám phá</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="w-full min-h-50 max-h-50 border border-[#D3D9DC] rounded-xl overflow-hidden"
->
-  <div class="h-full w-full relative">
-    <img
-      class="size-full object-cover"
-      src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
-      alt=""
-    />
-    <div
-      class="absolute top-0 left-0 w-full h-full rounded-[10px] pointer-events-none"
-      style="
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.1) 0%,
-          rgba(255, 255, 255, 0.3) 50%,
-          rgba(255, 255, 255, 1) 100%
-        );
-      "
-    ></div>
-    <div class="absolute bottom-0 right-0 left-0 top-0 p-4 flex items-end">
-      <div>
-        <p class="text-xl font-bold">
-          Khám phá vườn chim độc nhất vô nhị tại Phú Quốc
-        </p>
-        <p class="text-sm">Khám phá</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-          </div>
-          <div class="mt-2">
-            <a href="" class="text-base font-bold ">Xem thêm >></a>
-          </div>
-        </div>
-      </section>
-      <!-- JS SLIDER -->
-      <script>
-        (function () {
-          const slides = document.querySelectorAll('#slider .slide');
-          let current = 0;
-          function showSlide(idx) {
-            slides.forEach((slide, i) => {
-              slide.style.display = i === idx ? 'block' : 'none';
-            });
-          }
-          document.getElementById('prevSlide').addEventListener('click', function () {
-            current = (current - 1 + slides.length) % slides.length;
-            showSlide(current);
-          });
-          document.getElementById('nextSlide').addEventListener('click', function () {
-            current = (current + 1) % slides.length;
-            showSlide(current);
-          });
-          let autoSlide = setInterval(() => {
-            current = (current + 1) % slides.length;
-            showSlide(current);
-          }, 3000);
-          // Pause on mouse enter
-          document.getElementById('slider').addEventListener('mouseenter', () => {
-            clearInterval(autoSlide);
-          });
-          // Resume on mouse leave
-          document.getElementById('slider').addEventListener('mouseleave', () => {
-            autoSlide = setInterval(() => {
-              current = (current + 1) % slides.length;
-              showSlide(current);
-            }, 4000);
-          });
-          // Initial display
-          showSlide(current);
-        })();
-      </script>
-      <div id="respon" class="fixed top-0 left-0 w-full bg-blue-600 text-white text-center font-black text-lg z-[100000] p-2">
-  <div class="block sm:hidden">SM</div>
-  <div class="hidden sm:block md:hidden">MD</div>
-  <div class="hidden md:block lg:hidden">LG</div>
-  <div class="hidden lg:block xl:hidden">XL</div>
-  <div class="hidden xl:block">2XL</div>
-</div>
-
-<footer class="mt-10 ">
-  <div class="bg-bg-info pt-4 pb-10">
-    <div class="container mx-auto">
-      <h2 class="font-bold text-4xl max-md:text-3xl ">Cách thức đặt vé máy bay giá rẻ</h2>
-      <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6">
-        <div class="flex gap-2 items-center">
-          <div>
-            <p class="text-accent text-9xl font-bold">1</p>
-          </div>
-          <div>
-            <p class="text-2xl">
-              Đặt vé và thanh toán vé ngay trên website
-              <strong>
-                www.vemaybayso.vn
-              </strong>
-            </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-center">
-          <div>
-            <p class="text-accent text-9xl font-bold">2</p>
-          </div>
-          <div>
-            <p class="text-2xl">
-              Đặt vé qua tổng đài CSKH <strong class="text-accent">09.1900.5320</strong> và các công cụ Chat
-            </p>
-          </div>
-        </div>
-        <div class="flex gap-2 items-center">
-          <div>
-            <p class="text-accent text-9xl font-bold">3</p>
-          </div>
-          <div>
-            <p class="text-2xl">
-              Đến trực tiếp các điểm giao dịch hoặc văn phòng của Vemaybayso
-            </p>
-          </div>
-        </div>
-        <div></div>
-        <div class="flex justify-around">
-          <div class="flex flex-col items-center gap-3.5">
-            <div>
-              <a href=""><img src="./footer/zalo.svg" alt=""></a>
-            </div>
-            <p>Zalo</p>
-          </div>
-          <div class="flex flex-col items-center gap-3.5">
-            <div>
-              <a href=""><img src="./footer/mess.svg" alt=""></a>
-            </div>
-            <p>Messenger</p>
-          </div>
-          <div class="flex flex-col items-center gap-3.5">
-            <div>
-              <a href=""><img src="./footer/whatup.svg" alt=""></a>
-            </div>
-            <p>What Up</p>
-          </div>
-        </div>
-        <div>
-          <ul class="space-y-1">
-            <li class="flex items-start gap-2">
-              <span class="w-2.5 h-2.5 bg-red-500 rounded-full mt-2"></span>
-              <span class="text-base">Số 7 Ngõ 4 P. Đào Hinh, Việt Hưng, Long Biên, Hà Nội.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-2.5 h-2.5 bg-red-500 rounded-full mt-2"></span>
-              <span class="text-base">Số 226, Tổ 17, Phường Tân Thanh, TP. Điện Biên Phủ, Tỉnh Điện Biên</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class=" relative bg-primary pt-20 pb-14 text-white">
-    <div class="container mx-auto">
-      <div class="absolute -top-[60px] flex items-end">
-        <p class="text-accent text-9xl font-bold">4</p>
-        <p class="text-2xl text-white font-bold">Đặt vé trên ứng dụng ngân hàng</p>
-      </div>
-      <div class="grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-7">
-        <div class="flex flex-col gap-3">
-          <div>
-            <img src="./footer/Mbbank.png" class="w-full h-30 object-cover" alt="">
-          </div>
-          <div>
-            <p class="text-xl font-bold">
-              Ngân hàng MBBank
-            </p>
-          </div>
-          <div>
-            <p class="text-sm">Vé máy bay số chính thức triển khai bán hàng trên ngân hàng thương mại cổ phần Quân đội từ năm 2023. </p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <div>
-            <img src="./footer/Msbbank.png" class="w-full h-30 object-cover" alt="">
-          </div>
-          <div>
-            <p class="text-xl font-bold">
-              Ngân hàng MSBBank
-            </p>
-          </div>
-          <div>
-            <p class="text-sm">Vé máy bay số chính thức triển khai bán hàng trên ngân hàng thương mại cổ phần Quân đội từ năm 2023. </p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <div>
-            <img src="./footer/SeABank.png" class="w-full h-30 object-cover" alt="">
-          </div>
-          <div>
-            <p class="text-xl font-bold">
-              Ngân hàng MBBank
-            </p>
-          </div>
-          <div>
-            <p class="text-sm">Vé máy bay số chính thức triển khai bán hàng trên ngân hàng thương mại cổ phần Quân đội từ năm 2023. </p>
-          </div>
-        </div>
-        <div class="flex flex-col gap-3">
-          <div>
-            <img src="./footer/Mbbank.png" class="w-full h-30 object-cover" alt="">
-          </div>
-          <div>
-            <p class="text-xl font-bold">
-              Ngân hàng MBBank
-            </p>
-          </div>
-          <div>
-            <p class="text-sm">Vé máy bay số chính thức triển khai bán hàng trên ngân hàng thương mại cổ phần Quân đội từ năm 2023. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-[#CAF0F8] py-6">
-    <form action="" class="container mx-auto flex flex-col gap-4">
-      <h2 class="text-2xl font-bold">Liên hệ nhanh | Đăng ký nhận bản tin</h2>
-      <div class="grid grid-cols-4 gap-7 max-xl:grid-cols-5 max-md:grid-cols-1">
-        <div class="bg-white px-2.5 py-1.5 rounded-lg col-span-1 max-xl:col-span-2 max-md:col-span-1 ">
-          <label class="text-sm">Email: <span class="text-accent">*</span>
-            <br>
-            <input type="text" class="text-lg font-bold w-full outline-none" placeholder="Nhập địa chỉ email của bạn">
-          </label>
-        </div>
-        <div class="bg-white px-2.5 py-1.5 rounded-lg col-span-2 max-xl:col-span-3  max-md:col-span-1 ">
-          <label class="text-sm">Nội dung ngắn gọn:
-            <br>
-            <input type="text" class="text-lg font-bold w-full outline-none" placeholder="Thông tin cần gửi cho chúng tôi">
-          </label>
-        </div>
-        <div class="bg-primary flex items-center justify-center rounded-lg col-span-1 max-xl:col-span-5  max-md:col-span-1 ">
-          <button class="text-white px-9 py-4 font-bold text-base">GỬI/NHẬN THÔNG TIN</button>
-        </div>
-      </div>
-      <div class="flex items-start gap-2">
-        <input type="checkbox" name="" value="">
-        <p>Tôi đồng ý cho <strong>Vé máy bay số</strong>. và <strong>Cty CP Tập đoàn Công nghệ và Du lịch Thịnh Vượng</strong> xử lý dữ liệu cá nhân của tôi cho mục đích tiếp thị, trong phạm vi và mục đích được nêu trong "Thông tin về việc xử lý dữ liệu cá nhân" , thông qua phương tiện liên lạc điện tử (e-mail), bao gồm cả việc sử dụng cái gọi là hệ thống gọi tự động.</p>
-      </div>
-    </form>
-  </div>
-  <div>
-    <div class="py-7 container mx-auto">
-      <div class="grid grid-cols-4 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
-        <!-- Giới thiệu -->
-        <div>
-          <ul>
-            <p class="font-bold mb-6 text-base">Giới thiệu</p>
-            <li><a class="text-xs" href="">Tập đoàn Protech Group</a></li>
-            <li><a class="text-xs" href="">Vé máy bay số</a></li>
-            <li><a class="text-xs" href="">Điều khoản và Điều kiện của Trang web</a></li>
-            <li><a class="text-xs" href="">Chính sách bảo mật</a></li>
-            <li><a class="text-xs" href="">Các đối tác của chúng tôi</a></li>
-            <li><a class="text-xs" href="">Liên hệ</a></li>
-          </ul>
-        </div>
-        <!-- Thông tin hữu ích -->
-        <div>
-          <ul>
-            <p class="font-bold mb-6 text-base">Thông tin hữu ích</p>
-            <li><a class="text-xs" href="">Khám phá du lịch bằng máy bay</a></li>
-            <li><a class="text-xs" href="">Hướng dẫn đặt vé trên Website</a></li>
-            <li><a class="text-xs" href="">Cách thức thanh toán và nhận vé</a></li>
-            <li><a class="text-xs" href="">Tra cứu lại vé đã thanh toán</a></li>
-            <li><a class="text-xs" href="">Đặt vé đoàn, vé tour theo yêu cầu</a></li>
-            <li><a class="text-xs" href="">Khiếu nại thông tin</a></li>
-          </ul>
-        </div>
-        <!-- Hotline + Công ty -->
-        <div>
-          <p class="text-2xl font-bold text-accent">09 1900 5320</p>
-          <p class="text-sm font-bold">Hotline 24/7</p>
-          <p class="font-bold text-xs mt-7">
-            CÔNG TY CỔ PHẦN VÉ MÁY BAY SỐ<br>
-            TẬP ĐOÀN CÔNG NGHỆ VÀ DU LỊCH THỊNH VƯỢNG
-          </p>
-          <p class="text-xs mt-1">Địa chỉ: Số 12 Hẻm 481/69/135 Ngọc Lâm, Phường Bồ Đề, Thành phố Hà Nội, Việt Nam.</p>
-        </div>
-        <!-- Mạng xã hội + đăng ký -->
-        <div class="flex flex-col gap-8">
-          <ul class="flex gap-10 items-end">
-            <li><a href=""><img src="./footer/face.svg"  class="w-8" alt=""></a></li>
-            <li><a href=""><img src="./footer/tiktok.svg"  class="w-8" alt=""></a></li>
-            <li><a href=""><img src="./footer/youtube.svg"  class="w-8" alt=""></a></li>
-            <li><a href=""><img src="./footer/whatup.svg"  class="w-8" alt=""></a></li>
-          </ul>
-          <form action="" class="flex justify-between overflow-hidden rounded-2xl border border-[#D3D9DC] max-h-10 w-[240px]">
-            <input type="text" placeholder="Email" class="outline-0 p-4 max-w-[150px] text-xs">
-            <button class="bg-[linear-gradient(90deg,#00296B_16%,#FF3C13_100%)] py-3.5 px-5 w-[90px] text-xs font-bold text-white text-center">Đang Ký</button>
-          </form>
-          <div>
-            <img src="./footer/bocongthuong.png" alt="" class="w-[158px]">
-          </div>
-        </div>
-      </div>
-    </div>
-  <div class="bg-[#D3D9DC] py-4 text-center">
-    <p class="text-xs">@ 2023 Bản quyền thuộc Công ty Cổ phần Vé Máy Bay Số. Bảo lưu mọi quyền. Mã số DKKD/Thuế: 0110048815</p>
-  </div>
-</footer>
-<script src="./js/form_search.js"></script>
-</body>
-
+        <script src="./assets/site.js"></script>
+    </body>
 </html>
